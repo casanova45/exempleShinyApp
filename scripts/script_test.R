@@ -21,6 +21,6 @@ tempData                                       <- tempData[which(tempData$jour >
 graph <- ggplot2::ggplot(data = tempData, aes(x = jour, y = hosp, color = dep)) +
   geom_line() +
   theme_minimal() +
-  labs(x = "Date", y = "Nombre d'hospitalisation")
+  labs(x = "Date_mod", y = "Nombre d'hospitalisation")
 
 graph
